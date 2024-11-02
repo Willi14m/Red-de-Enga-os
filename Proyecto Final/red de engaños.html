@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos de YouTube Responsivos</title>
+    <style>
+        body {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.692);
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            flex: 1 1 300px; /* Ancho flexible de los videos */
+            max-width: 100%; /* Asegura que no exceda el ancho de la pantalla */
+        }
+        .responsive-iframe {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* Relación de aspecto 16:9 */
+            width: 80%;
+            height: 50%;
+        }
+        .responsive-iframe iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <center><h1>"RED DE ENGAÑOS"</h1></center>
+
+    <center><P><B>Esto es red de engaños, esperamos tengas una experiencia muy grata y puedas disfrutar de nuestro cortometraje...</B></P></center>
+    <div class="video-container">
+        <div class="responsive-iframe">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BQGqm1itL5I?si=sJDHGif5UDJWW-90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="video-container">
+        <div class="responsive-iframe">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/C8eZYuxVWww?si=5yn6gH2PxjLI6ggx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="video-container">
+        <div class="responsive-iframe">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/St7HfnQ2OJ4?si=d77RZMdtnI4R3RNV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
